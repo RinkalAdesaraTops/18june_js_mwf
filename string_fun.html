@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = "hi hello Hi How are you hi?"
+        document.write('<br>length is '+str.length)
+        document.write('<br>Uppercase is '+str.toUpperCase())
+        document.write('<br>Lowercase is '+str.toLowerCase())
+        document.write('<br>Slice is '+str.slice(3,8)) //8-7th position
+        document.write('<br>Substr is '+str.substr(3,8)) //8 - total 8 characters
+        // by default -- case sensitive
+        // let s = str.replace('HI','TEST')
+        let s = str.replace(/HI/ig,'TEST')
+        document.write('<br>Replace string is '+s)
+        s = str.replaceAll(/hi/gi,'TEST')
+        document.write('<br>ReplaceAll string is '+s)
+        let a = "     kjhgt  edjkhg dfkjhg dfgkhdfkg          "
+        document.write('<br>a is '+a.length)
+        document.write('<br>a is '+a.trim().length)
+        document.write('<br>a is '+a.trimStart().length)
+        document.write('<br>a is '+a.trimEnd().length)
+        let b = "432"
+        let sr = b.padStart(6,"Rs")
+        document.write('<br>'+sr)
+         sr = b.padEnd(6,"Rs")
+        document.write('<br>'+sr)
+
+    </script>
+</body>
+</html>

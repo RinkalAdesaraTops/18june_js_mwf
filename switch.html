@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // document.write('<br>1.Addition')
+        // document.write('<br>2.MInus')
+        // document.write('<br>3.Multiplication')
+        // document.write('<br>4.Division')
+        let ch = parseInt(prompt("\n 1.Addition \n 2.MInus \n3.Multiplication \n4.Division \n ENter choice:")) //7
+        let a= parseInt(prompt("ENter a:"))
+        let b= parseInt(prompt("ENter b:"))
+// 1 2 3 4
+// + * - /
+// a m d s
+        switch(ch){
+            case 1: document.write('<br>Addition is '+(a+b))
+                    break;
+            case 2:document.write('<br>Minus is '+(a-b))
+                    break
+            case 3:document.write('<br>Multiply is '+(a*b))
+                    break;
+            case 4:document.write('<br>Division is '+(b/a))
+                    break;
+            default:document.write('<br>Invalid choice...')
+                    break;
+        }
+    </script>
+</body>
+</html>

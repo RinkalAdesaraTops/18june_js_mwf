@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ch;
+        let amt
+        do {
+            ch = parseInt(prompt("ENter choice:"))
+            amt = parseInt(prompt("ENter amount:"))
+            switch(ch){
+                case 1: let dp_amt = parseInt(prompt("Enter deposit amount:"))
+                    amt += dp_amt
+                    document.write('<br>Final balance is '+amt)
+                    break
+            case 2: let wd_amt = parseInt(prompt("Enter withdraw amount:"))
+                    amt -= wd_amt
+                    document.write('<br>Final balance is '+amt)
+                    break
+            case 3: 
+                    document.write('<br>Final balance is '+amt)
+                    break
+
+            default: break
+            }
+        }while(ch!=4)
+        // isNaN - not a number
+    </script>
+</body>
+</html>

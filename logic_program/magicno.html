@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1729
+        //sum of digits-- 19
+        //reverse -- 91
+        //multiply == 19*91 == 1729
+        let no = parseInt(prompt("Enter no:"))
+        let sum =0
+        let rev=0
+        let f=no
+        while(no>0){
+            let r=no%10
+            no = Math.floor(no/10)
+            sum = sum+r
+        }
+        document.write('<br>Sum is '+sum)
+        let s=sum
+        while(sum>0){
+            let r=sum%10
+            rev = (rev*10)+r
+            sum = Math.floor(sum/10)
+        }
+        document.write('<br>Reverse is '+rev)
+        let finalans = rev*s
+        document.write('<br>Final ans is '+finalans)
+        if(f==finalans){
+            document.write('<br>Magic no')
+        } else {
+            document.write('<br>Not Magic no')
+        }
+
+    </script>
+</body>
+</html>

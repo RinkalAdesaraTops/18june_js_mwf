@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            float: left;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+    <p>lorem sdkjf </p>
+    <p>lorem sdkjf sdfgsjdh</p>
+    <p>lorem sdkjf </p>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <script>
+        document.getElementById('demo').innerHTML = "<b>Hello</b>"
+        document.getElementById('demo1').innerText = "<b>Hello 12345</b>"
+        document.getElementById('demo1').style.color = "red"
+        document.getElementById('demo1').style.backgroundColor = "yellow"
+
+        
+        let a = document.getElementsByClassName('box')
+        console.log(a);
+        //array format  - index - always start with zero
+        // document.getElementsByTagName('p')[0].style.color = "blue"
+        // document.getElementsByTagName('p')[1].style.color = "purple"
+        // document.getElementsByTagName('p')[2].style.color = "blue"
+        
+        for(let i=0;i<a.length;i++){
+            a[i].style.backgroundColor = "blue"
+        }
+        // getElementsByClassName
+        // getElementsByName
+        // getElementsByTagName
+
+    </script>
+</body>
+</html>

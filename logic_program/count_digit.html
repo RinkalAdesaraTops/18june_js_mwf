@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // count no of digits =428 == 4 2 8
+        //sum of digits
+        let no = parseInt(prompt("Enter no :"))
+        let count = 0
+        let sum=0
+        while(no>0){//428>0 42>0 4>0 0>0
+            let r=no%10 //428%10 = 8 42%10=2 4%10=4
+            no= Math.floor(no/10) //428/10=42.8 = 42/10=4.2=4 4/10 = 0.4=0
+            count++ //1 2 3
+            sum += r
+        }
+        document.write('<br>No of digits are '+count)
+        document.write('<br>Sum of digits are '+sum)
+    </script>
+</body>
+</html>

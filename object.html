@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // key-value pair
+        // let a = {
+        //     "name":"Test",
+        //     "age":26,
+        //     "salary":26000,
+        //     "getData":function(){
+        //         return "Name is "+name
+        //     }
+        // }
+        // document.write('<br>Name is '+a.name)
+        // document.write('<br>Salary is '+a.salary)
+        // document.write('<br>Age is '+a['age'])
+        // for--in loop - object
+        // for(let x in a){
+        //     document.write('<br>')
+        //     document.write(x+" is "+a[x])
+        // }
+        // for__of loop
+        // a = [10,20,30,40]
+        // for(let x of a){ //array
+        //     document.write('<br>')
+        //     document.write(x)
+        // }
+        let a = {
+            "name":"Test",
+            "age":26,
+            "salary":26000,
+            "getData":function(){
+                return "Name is "+this.name+" -- Age is "+this.age
+            },
+            // getter & setter method
+            get dispSalary(){
+                return this.salary
+            },
+            set changeSalary(s){
+                this.salary = s
+            }
+        }
+        document.write('<br>'+a.getData())
+        document.write('<br> Salary is '+a.dispSalary)
+        a.changeSalary = 50000
+        document.write('<br> Salary is '+a.dispSalary)
+
+
+    </script>
+</body>
+</html>

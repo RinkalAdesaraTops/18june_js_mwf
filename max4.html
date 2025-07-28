@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=350
+        let b=560
+        let c=60
+        let d=30
+        if(a>b){
+            if(a>c){
+                if(a>d){ //30>300
+                    document.write('<br>A is max')
+                } else {
+                    document.write('<br>D is max')
+                }
+            } else {
+                if(c>d){
+                    document.write('<br>C is max')
+                } else {
+                    document.write('<br>D is max')
+                }
+            }
+        } else {
+            if(b>c){ //56>60
+                if(b>d){
+                    document.write('<br>B is max')                 
+                } else {
+                    document.write('<br>D is max')                 
+                }
+            } else {
+                if(c>d){
+                    document.write('<br>C is max')
+                } else {
+                    document.write('<br>D is max')
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>

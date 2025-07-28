@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // array- collection of data
+        // a=20
+        let a = [10, 20, 30, 40, 50]
+        // document.write('<br>a is '+a[2])
+        // document.write('<br>a is '+a[4])
+        // for (let i = 0; i < 5; i++) {
+        //     document.write('<br>position '+i+' - element is ' + a[i])
+        // }
+        // document.write('<br>Length is ',a.length)
+        // document.write('<br>Array is '+a)
+        // a.push(55)
+        // document.write('<br>Array is '+a)
+        // a.push("iurytuerit")
+        // document.write('<br>Array is '+a)
+        // a.pop()
+        // document.write('<br>Array is '+a)
+        // a.unshift(100)
+        // document.write('<br>Array is '+a)
+        // a.shift()
+        // document.write('<br>Array is '+a)
+        // //add data from 2nd position
+        // a.splice(2,0,11,22,33,44)
+        // document.write('<br>Array is '+a)
+        // a.splice(4,2,255,355,455)
+        // document.write('<br>Array is '+a)
+        // let b = a.slice(3,7)
+        // document.write('<br>Slice is '+b)
+        // b = a.slice(4)
+        // document.write('<br>Array is '+b)
+        // b = a.slice(-4)
+        // document.write('<br>Array is '+b)
+        // b = a.slice(-9,-4)
+        // document.write('<br>Array is '+b)
+// slice 
+        let arr = ["urty","xyu","abfd","jkl","str"]
+        document.write('<br>String array is '+arr)
+        document.write('<br>String array - Sort is '+arr.sort())
+        document.write('<br>String array - Sort - reverse is '+arr.reverse())
+
+        arr = [78,56,43,320,100,25,90]
+        document.write('<br>String array - Sort is '+arr.sort())
+        document.write('<br>String array - Sort - reverse is '+arr.reverse())
+        //compare function
+        document.write('<br>String array - Sort is '+arr.sort((a,b)=>{
+            // return a-b //78-56 = 22 43-320 == -
+            return b-a //78-56 = 22 43-320 == -
+        }))
+        document.write('<br>String array - Sort - reverse is '+arr.reverse())
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- user define function -->
+     <!-- 1)TNRN --  Take nothing return nothing -->
+      <script>
+        // function declaration
+        function add(){
+            let a=25
+            let b=35
+            document.write('<br>Addition is '+(a+b))
+        }
+        // add() //function calling
+        
+        // 2)TSRN - take something return nothing
+        function minus(i,j){ //i,j - parameter
+            document.write('<br>Minus is '+(i-j))
+        }
+        // let a= parseInt(prompt("Enter a:"))
+        // let b= parseInt(prompt("Enter b:"))
+        // minus(a,b) //arguments - a,b value
+        // minus(65,25)
+        // 3)TNRS - take nothing return something
+        function area(){
+            let r = parseInt(prompt("Enter radious:"))
+            const pi = 3.14
+            return pi*r**2
+        }
+        // let ans = area()
+        // document.write('<br>Area of circle is '+area())
+        // 4)TSRS - take something return something
+        function cube(a){
+            return a**3
+        }
+        document.write('<br>Cube is '+cube(4))
+        // sum of digit, count_digit, palindrom, factorial, reverse, magic no
+        function sum_digit(n){
+            let sum =0
+            while(n>0){
+                let r= n%10
+                n = Math.floor(n/10)
+                sum += r
+            }
+            return sum
+        }
+        // sum_digit(125)
+      </script>
+</body>
+</html>
