@@ -5,6 +5,7 @@ const saveData = ()=>{
     let age = document.frm.age.value
     let sal = document.frm.salary.value
     let data = JSON.parse(localStorage.getItem('userinfo'))
+    allData = data
     let len = (data!=null)? data.length+1 : 1;
     let obj = {
         id:len,
@@ -49,8 +50,8 @@ const delData = (id)=>{
             i.id = j++
             return i
     })
+    
     localStorage.setItem("userinfo",JSON.stringify(newdata))
-    document.getElementById('alldata').innerHTML = ''
     dispData()
 }
 dispData()
