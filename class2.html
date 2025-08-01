@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class user{
+            // parameterized constructor
+            constructor(a,b){
+                this.name = a
+                this.age = b
+            }
+            disp(){
+                return this.name+'---'+this.age
+            }
+        }
+        let obj = new user("TEsT",25)
+        document.write('<br>Name & age is - '+obj.disp())
+    </script>
+</body>
+</html>

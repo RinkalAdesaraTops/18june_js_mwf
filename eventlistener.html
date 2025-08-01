@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+   <script>
+        let a = document.createElement("button")
+        console.log(a);
+        let txt = document.createTextNode("Add Click")
+        a.appendChild(txt)
+        document.getElementById('demo').append(a)
+        a.addEventListener("click",function(){
+                alert("Button clicked....")
+        })
+
+        // callback- hell - problem
+        // synchronous- step by step
+        // solution = promises & async-await
+// PENDING
+//fullfiled
+// rejected
+
+    let pr = new Promise((rs,rj)=>{
+            rj("promise rejected")
+            rs("promise completed")
+            
+    }).then((i)=> console.log(i))
+    .catch((e)=>console.log("Error msg -- "+e))
+
+    let p = new Promise((rs,rj)=>{
+        let age = 12
+        if(age>18){
+            rs("Eligible 4 vote")
+        } else {
+            rj("Not allowed to vote")
+        }
+    }).then((i)=> console.log(i))
+    .catch((e)=>console.log("Error msg -- "+e))
+   </script>
+</body>
+</html>

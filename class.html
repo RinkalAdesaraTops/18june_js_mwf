@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // object oriented programming
+        // 1)class & object
+        // 2)constructor - 2 types
+        // 3)inheritance
+        // 4)polymorphism - one name multiple form
+        // 5)Data encapsulation - wrapping up of data into single unit & abstraction - hiding
+        // C language - structure prog.
+        // C++ - oops
+        class emp{
+            // special member function
+            //default constructor
+            constructor(){
+                //to declare member variable
+                this.name="sdhjfg"
+                this.age=25
+            }
+            //normal function - wemust have to call using object
+            disp(){
+                document.write('<br>Name is '+this.name)
+            }
+        }
+        // object create
+        // constructor func. is automatically called when object is created
+        // this keyword -- current value or object point
+        let e1 = new emp() //runtime entity
+        e1.disp()
+    </script>
+</body>
+</html>

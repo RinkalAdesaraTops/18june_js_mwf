@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- try catch finally -->
+    <script>
+        // error & exception 
+        // error - system generated 
+        // exception - user created/generated error
+        // try-catch block = to handle custom/user-defined error
+        // try{
+        //     //error generate user
+        //     throw "ghjghj"
+        // } catch(e){
+        //     //solution
+        // } 
+        // finally{
+        //     //always executed
+        // }
+
+        let a=20
+        let b=0
+        try{
+            if(b==0){
+                throw "it is not divisible by zero"
+            } else {
+                document.write('<br>Division is '+(a/b))
+            }
+        } catch(i){
+            document.write('<br>Error is -- '+i)
+        } finally{
+            document.write('<br>Always excuted')
+        }
+    </script>
+</body>
+</html>

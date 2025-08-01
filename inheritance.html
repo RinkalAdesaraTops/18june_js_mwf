@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // reusability
+        // parent-child 
+        // always create child class object
+        // overriding
+        class abc { //parent/base/super class
+            constructor(i) {
+                document.write('<br> Parent constructor called..'+i)
+            }
+            dispA(i){
+                document.write('<br>Parent - dispA func called..'+(i**2))
+            }
+        }
+        class xyz extends abc {  //child/derived/sub
+            constructor() {
+                super(10) 
+                document.write('<br> Child constructor called..')
+            }
+            dispA(a){
+                super.dispA(100)
+                document.write('<br>child - dispA func called..'+(a**2))
+            }
+            dispB(a,b){
+                document.write('<br>Parent - dispB func called..'+(a+b))
+            }
+        }
+        let e1 = new xyz()
+        e1.dispA(5)
+        e1.dispB(5,6)
+    </script>
+</body>
+
+</html>
