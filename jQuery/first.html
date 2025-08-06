@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        .box {
+            height: 100px;
+            width: 200px;
+            background-color: goldenrod;
+            border: 2px solid black;
+            margin:20px;
+        }
+
+        .b1 {
+            background-color: cadetblue;
+            border: 2px solid black;
+            height: 100px;
+            width: 200px;
+            margin:20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div id="txt" class="box"></div>
+    <button onclick="addStyle()">Add Class</button>
+    <button onclick="removeStyle()">Remove Class</button>
+    <button onclick="hideBox()">Hide box</button>
+    <button onclick="showBox()">Show box</button>
+    <script>
+        // selector - id
+        $("#demo").html("<b>Hiii</b>")
+        $("#demo1").text("<b>Hiii</b>")
+        // $("p").css("color","red")
+        // $("p").css("backgroundColor","green")
+        $("p").css({
+            color: "yellow",
+            backgroundColor: "green",
+            border: "2px solid black"
+        })
+        function addStyle(){
+            $("#txt").removeClass("b1").addClass("box")
+            // $("#txt").removeClass("b1")
+        }
+        function removeStyle(){
+            $("#txt").removeClass("box")
+            $("#txt").addClass("b1")
+        }
+        // function hideBox(){
+        //     $(".box").hide()
+        // }
+        const hideBox = ()=>{
+            $(".box").hide()
+        }
+        function showBox(){
+            $(".box").show()
+        }
+    </script>
+
+</body>
+
+</html>
